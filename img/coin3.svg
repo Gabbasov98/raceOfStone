@@ -1,0 +1,24 @@
+<svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M60.7281 60.7282C76.9632 44.4931 84.8166 26.0241 78.2691 19.4766L70.6478 11.8554L11.8553 70.6479L19.4765 78.2691C26.024 84.8166 44.493 76.9633 60.7281 60.7282Z" fill="#D50013"/>
+<mask id="mask0_1_991" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="11" y="11" width="70" height="70">
+<path d="M60.7281 60.7282C76.9632 44.4931 84.8166 26.0241 78.2691 19.4766L70.6478 11.8554L11.8553 70.6479L19.4765 78.2691C26.024 84.8166 44.493 76.9633 60.7281 60.7282Z" fill="#AE0010"/>
+</mask>
+<g mask="url(#mask0_1_991)">
+<path d="M9.67773 63.1476L38.7111 92.1809" stroke="#8B000D" stroke-width="6"/>
+<path d="M15.7264 57.099L44.7597 86.1323" stroke="#8B000D" stroke-width="6"/>
+<path d="M27.5816 45.2437L56.615 74.2771" stroke="#8B000D" stroke-width="6"/>
+<path d="M39.4369 33.3885L68.4702 62.4218" stroke="#8B000D" stroke-width="6"/>
+<path d="M51.2921 21.5332L80.3255 50.5665" stroke="#8B000D" stroke-width="6"/>
+<path d="M21.533 51.2924L50.5663 80.3257" stroke="#8B000D" stroke-width="6"/>
+<path d="M33.3882 39.437L62.4215 68.4704" stroke="#8B000D" stroke-width="6"/>
+<path d="M45.2435 27.5818L74.2769 56.6151" stroke="#8B000D" stroke-width="6"/>
+<path d="M57.0989 15.7265L86.1322 44.7598" stroke="#8B000D" stroke-width="6"/>
+<path d="M63.1473 9.6778L92.1807 38.7111" stroke="#8B000D" stroke-width="6"/>
+</g>
+<ellipse cx="41.2516" cy="41.2516" rx="41.5726" ry="16.7659" transform="rotate(-45 41.2516 41.2516)" fill="#D50013"/>
+<ellipse cx="40.5257" cy="40.5257" rx="36.098" ry="13.6865" transform="rotate(-45 40.5257 40.5257)" fill="#8B000D"/>
+<ellipse cx="40.2838" cy="40.2838" rx="33.3607" ry="11.9756" transform="rotate(-45 40.2838 40.2838)" fill="#D50013"/>
+<path d="M36.9654 42.6748L34.7193 34.7188L43.139 37.4286L45.8488 45.8483L36.9654 42.6748Z" stroke="#8B000D" stroke-width="2" stroke-linejoin="round"/>
+<path d="M33.1464 47.4211L47.4212 33.1464" stroke="#8B000D" stroke-width="2" stroke-linejoin="round"/>
+<path d="M34.719 34.7191L33.1464 47.4212L45.8485 45.8485L47.4211 33.1464L34.719 34.7191Z" stroke="#8B000D" stroke-width="2" stroke-linejoin="round"/>
+</svg>

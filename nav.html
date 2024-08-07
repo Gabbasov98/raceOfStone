@@ -3,13 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="HandheldFriendly" content="true" />
+
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Главная</title>
 </head>
+
 
 
 <style>
@@ -22,35 +26,57 @@
         margin-bottom: 25px;
         width: 300px;
         height: 45px;
+        color: #fff;
     }
 </style>
 
 <body class="m-page">
 
     <div class="wrapper" style="padding: 50px;">
-        <a href="index.html" style="display: block; margin-bottom: 20px;">
-            Главная
+        <a href="preloader.html" style="display: block; margin-bottom: 20px;">
+            Preloader
         </a>
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная / Стартовая
+        </a>
+        <a href="index2.html" style="display: block; margin-bottom: 20px;">
+            Главная / Стартовая 2
+        </a>
+        <a href="index3.html" style="display: block; margin-bottom: 20px;">
+            Главная / Стартовая 3
+        </a>
+        <button data-modal="bonusModal" style="border: 2px solid #fff;margin-bottom: 20px;">
+            Ежедневный бонус
+        </button>
 
-
-
-
-        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">
-            Быстрый заказ
+        <a href="friends.html" style="display: block; margin-bottom: 20px;">
+            Друзья
+        </a>
+        <a href="tasks.html" style="display: block; margin-bottom: 20px;">
+            Задания
+        </a>
+        <a href="boosts.html" style="display: block; margin-bottom: 20px;">
+            Boosts
+        </a>
+        <a href="game.html" style="display: block; margin-bottom: 20px;">
+            Game
+        </a>
+        <button data-modal="finishModal" style="border: 2px solid #fff;margin-bottom: 20px;">
+            Игра окончена!
+        </button>
+        <button data-modal="finishModal2" style="border: 2px solid #fff;margin-bottom: 20px;">
+            Игра окончена 2!
+        </button>
+        <button data-modal="chargeModal" style="border: 2px solid #fff;margin-bottom: 20px;">
+            Полный бак
         </button>
 
 
-        <code>
 
-            @@include
-            ('components/page-blocks/_filter-slider.html',{ <br>
-            "start1":"0", <br>
-            "start2":"30000", <br>
-            "min":"1000", <br>
-            "max":"100000", <br>
-            })
 
-        </code>
+
+
+
     </div>
 
 
@@ -59,22 +85,217 @@
 
 
 
-    <div class="modal" id="Modal">
+    <div class="modal finish-modal" id="finishModal">
         <div class="modal__bg modal-bg _close-modal"></div>
         <div class="modal__dialog">
-            <div class="modal__top">
-                <div class="text32 medium-text">
-                    Title
+            <div class="m-card">
+                <div class="m-card__inner">
+                    <div class="modal__title">
+                        Игра окончена!
+                    </div>
+                    <img class="finish-modal__img" src="img/galaxy.png" alt="">
+
+
+
+                    <div class="props">
+                        <div class="prop-item">
+                            <div class="prop-item__title">
+                                Очков
+                            </div>
+                            <div class="prop-item__desc">
+                                <img src="img/coin.svg" alt="">
+                                <span>150,000</span>
+                            </div>
+                        </div>
+                        <div class="prop-item">
+                            <div class="prop-item__title">
+                                Комбо
+                            </div>
+                            <div class="prop-item__desc">
+                                150
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="finish-modal__nav">
+                        <button class="finish-modal__btn m-btn m-btn-white-outline">
+                            <span>В меню</span>
+                        </button>
+                        <button class="finish-modal__btn m-btn m-btn-red">
+                            <img src="img/refresh.svg" alt="">
+                            <span>Еще раз</span>
+                        </button>
+                    </div>
                 </div>
-                <button class="close-btn _close-modal">
-                    <img src="img/close.svg" alt="">
-                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal finish-modal" id="finishModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="m-card">
+                <div class="m-card__inner">
+                    <div class="modal__title">
+                        Игра окончена!
+                    </div>
+                    <img class="finish-modal__img" src="img/galaxy.png" alt="">
+
+
+                    <div class="finish-modal__desc">
+                        <div class="text14">
+                            Попытки закончились! <br>
+                    Дополнительные можно приобрести в улучшениях
+                        </div>
+                    </div>
+
+
+                    <div class="props">
+                        <div class="prop-item">
+                            <div class="prop-item__title">
+                                Очков
+                            </div>
+                            <div class="prop-item__desc">
+                                <img src="img/coin.svg" alt="">
+                                <span>150,000</span>
+                            </div>
+                        </div>
+                        <div class="prop-item">
+                            <div class="prop-item__title">
+                                Комбо
+                            </div>
+                            <div class="prop-item__desc">
+                                150
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="finish-modal__nav">
+                        <button class="finish-modal__btn m-btn m-btn-white-outline">
+                            <span>В меню</span>
+                        </button>
+                        <button disabled class="finish-modal__btn m-btn m-btn-red">
+                            <img src="img/refresh.svg" alt="">
+                            <span>Еще раз</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal modal2 charge-modal" id="chargeModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="m-card">
+                <div class="m-card__inner">
+                    <div class="charge-modal__img">
+                        <img src="img/battery.png" alt="">
+                    </div>
+
+                    <div class="modal__title">
+                        Полный бак
+                    </div>
+
+                    <div class="charge-modal__desc">
+                        <div class="text14">
+                            Активируйте еще 5 дополнительных игр
+                        </div>
+                    </div>
+
+                    <div class="charge-modal__price">
+                        <img src="img/coin.svg" alt="">
+                        <span>Бесплатно</span>
+                    </div>
+
+                    <button class="charge-modal__btn m-btn m-btn-big m-btn-red">
+                        <span>Получить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal2 bonus-modal" id="bonusModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="m-card">
+                <div class="m-card__inner">
+                    <div class="bonus-modal__top">
+                        <div class="bonus-modal__info">
+                            <div class="bonus-modal__title">
+                                Ежедневный бонус
+                            </div>
+                            <div class="bonus-modal__desc">
+                                Заходите каждый день <br>
+                            и получайте больше бонусов
+                            </div>
+                        </div>
+                        <div class="bonus-modal__items">
+                            <div class="bonus-modal__item bonus-modal__item--red"></div>
+                            <div class="bonus-modal__item bonus-modal__item--red"></div>
+                            <div class="bonus-modal__item bonus-modal__item--red"></div>
+                            <div class="bonus-modal__item bonus-modal__item--red"></div>
+                            <div class="bonus-modal__item"></div>
+                            <div class="bonus-modal__item"></div>
+                            <div class="bonus-modal__item"></div>
+                        </div>
+                    </div>
+
+                    <div class="bonus-slider" data-current-slide="2">
+                        <div class="bonus-slider__wrap">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="bonus-card m-card">
+                                            <div class="m-card__inner">
+                                                <img src="img/coin.svg" alt="" class="bonus-card__icon">
+                                                <div class="bonus-card__num">
+                                                    +50 000
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="bonus-card m-card">
+                                            <div class="m-card__inner">
+                                                <img src="img/coin.svg" alt="" class="bonus-card__icon">
+                                                <div class="bonus-card__num">
+                                                    +100 000
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="bonus-card m-card">
+                                            <div class="m-card__inner">
+                                                <img src="img/coin.svg" alt="" class="bonus-card__icon">
+                                                <div class="bonus-card__num">
+                                                    +150 000
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="bonus-modal__btn m-btn m-btn-big m-btn-red">
+                        <span>Продолжить</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
 
     <!--  -->
-    <script src="js/libs.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
 
 </body>

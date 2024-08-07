@@ -3,247 +3,161 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="HandheldFriendly" content="true" />
+
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Главная</title>
 </head>
 
+
 <body class="m-page">
 
-    <div class="boost _tabs-parent">
+    <div class="main">
         <div class="container">
-            <div class="boost-balance">
-                <div class="boost-balance__title text14">
-                    Баланс:
+            <div class="main-header">
+                <div class="main-header__user">
+                    <img class="main-header__user-img" src="img/user.svg" alt="">
+                    <span class="text16">Go_tiko</span>
                 </div>
-                <div class="boost-balance__wrap">
-                    <div class="boost-balance__item">
-                        <img src="img/coin.svg" alt="">
-                        <span>5.0 M</span>
+                <div class="main-header__action">
+                    <div class="hint">
+                        <button class="hint__btn">
+                            <img src="img/hint-icon2.svg" alt="">
+                        </button>
                     </div>
-                    <div class="boost-balance__item">
-                        <span>10,1K RS</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tabs">
-                <div class="tab _tab _active" data-tab="_tab1">
-                    <span>Улучшения</span>
-                </div>
-                <div class="tab _tab" data-tab="_tab2">
-                    <span>Магазин</span>
-                </div>
-            </div>
-
-            <div class="tab-content _tab1 _active">
-                <div class="boost-upgrades">
-                    <div class="m-subtitle">
-                        Ежедневный буст:
-                    </div>
-                    <div class="boost-upgrades__items">
-                        <div class="m-card boost-card ">
-                            <div class="m-card__inner">
-                                <div class="boost-card__top">
-                                    <div class="boost-card__icon">
-                                        <img src="img/boost-icon.svg" alt="">
-                                    </div>
-                                    <div class="boost-card__title">
-                                        Заряд времени
-                                    </div>
-                                </div>
-                                <div class="boost-card__desc">
-                                    Активируйте еще дополнительную игру
-                                </div>
-                                <div class="boost-card__num">
-                                    <span>3/3</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="m-card boost-card _shadow">
-                            <div class="m-card__inner">
-                                <div class="boost-card__top">
-                                    <div class="boost-card__icon">
-                                        <img src="img/boost-icon2.svg" alt="">
-                                    </div>
-                                    <div class="boost-card__title">
-                                        Забрать камень
-                                    </div>
-                                </div>
-                                <div class="boost-card__desc">
-                                    Активируйте еще 1 заряд камня в игре
-                                </div>
-                                <div class="boost-card__num">
-                                    <span>1/1</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="boost-quest">
-                    <div class="m-subtitle">
-                        Квест буст:
-                    </div>
-                    <div class="m-card boost-card2">
-                        <div class="m-card__inner">
-                            <div class="boost-card2__top">
-                                <div class="boost-card2__items">
-                                    <div class="boost-card2__item">
-                                        <div class="boost-card2__icon">
-                                            <img src="img/arrow-top.svg" alt="">
-                                        </div>
-                                        <span>Game boost </span>
-                                    </div>
-                                    <div class="boost-card2__item2">
-                                        <div class="boost-card2__icon">
-                                            <img src="img/coin.svg" alt="">
-                                        </div>
-                                        <span>20,000 </span>
-                                    </div>
-                                </div>
-                                <button class="boost-card2__btn m-btn m-btn-red">
-                                    <span>UP</span>
-                                </button>
-                            </div>
-                            <div class="boost-card2__bottom">
-                                <div class="boost-card2__desc">
-                                    <b>lvl 1:</b> Открывает две боковые клетки сверху
-                                </div>
-                            </div>
+                    <a href="" class="main-header__wallet">
+                        <img src="img/wallet.svg" alt="">
+                    </a>
+                    <div class="lang">
+                        <div class="lang__show">
+                            <span class="text16">RU</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="tab-content _tab2">
-                <div class="boost-upgrades">
-                    <div class="m-subtitle">
-                        Камни:
-                    </div>
-                    <div class="boost-upgrades__items">
-                        <div class="m-card boost-card3 @@mClass">
-                            <div class="m-card__inner">
-                                <div class="boost-card3__title">
-                                    Камень души
-                                </div>
-                                <div class="boost-card3__wrap">
-                                    <div class="boost-card3__icon">
-                                        <img src="img/brilliant.png" alt="">
-                                        <span class="boost-card3__shadow" style="background: #c96700;"></span>
-                                    </div>
-                                    <div class="boost-card3__info">
-                                        <div class="boost-card3__price">
-                                            <img src="img/coin2.svg" alt="">
-                                            <span class="text12">0,5 TON</span>
-                                        </div>
-                                        <button class="boost-card3__btn m-btn m-btn-red">
-                                            <span>Купить</span>
-                                        </button>
-                                    </div>
-                                </div>
+
+            <div class="user-info m-card">
+                <div class="m-card__inner">
+                    <div class="user-info__wrap _flex">
+                        <div class="user-info__balance _flex">
+                            <img src="img/coin.svg" alt="">
+                            <span class="text20">4.562 M</span>
+                        </div>
+                        <div class="user-info__upgrade">
+                            <div class="user-info__num ">
+                                437 998
+                            </div>
+                            <div class="user-info__next">
+                                до следующего уровня
                             </div>
                         </div>
-
-                        <div class="m-card boost-card3 @@mClass">
-                            <div class="m-card__inner">
-                                <div class="boost-card3__title">
-                                    Камень разума
-                                </div>
-                                <div class="boost-card3__wrap">
-                                    <div class="boost-card3__icon">
-                                        <img src="img/brilliant2.png" alt="">
-                                        <span class="boost-card3__shadow" style="background: #c59807;"></span>
-                                    </div>
-                                    <div class="boost-card3__info">
-                                        <div class="boost-card3__price">
-                                            <img src="img/coin2.svg" alt="">
-                                            <span class="text12">1 TON</span>
-                                        </div>
-                                        <button class="boost-card3__btn m-btn m-btn-red">
-                                            <span>Купить</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="m-card boost-card3 @@mClass">
-                            <div class="m-card__inner">
-                                <div class="boost-card3__title">
-                                    Камень пространства
-                                </div>
-                                <div class="boost-card3__wrap">
-                                    <div class="boost-card3__icon">
-                                        <img src="img/brilliant3.png" alt="">
-                                        <span class="boost-card3__shadow" style="background: #2c31d5;"></span>
-                                    </div>
-                                    <div class="boost-card3__info">
-                                        <div class="boost-card3__price">
-                                            <img src="img/coin2.svg" alt="">
-                                            <span class="text12">1,5 TON</span>
-                                        </div>
-                                        <button class="boost-card3__btn m-btn m-btn-red">
-                                            <span>Купить</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="m-card boost-card3 @@mClass">
-                            <div class="m-card__inner">
-                                <div class="boost-card3__title">
-                                    Камень времени
-                                </div>
-                                <div class="boost-card3__wrap">
-                                    <div class="boost-card3__icon">
-                                        <img src="img/brilliant4.png" alt="">
-                                        <span class="boost-card3__shadow" style="background: #22c407;"></span>
-                                    </div>
-                                    <div class="boost-card3__info">
-                                        <div class="boost-card3__price">
-                                            <img src="img/coin2.svg" alt="">
-                                            <span class="text12">2 TON</span>
-                                        </div>
-                                        <button class="boost-card3__btn m-btn m-btn-red">
-                                            <span>Купить</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="m-card boost-card3 @@mClass">
-                            <div class="m-card__inner">
-                                <div class="boost-card3__title">
-                                    Камень силы
-                                </div>
-                                <div class="boost-card3__wrap">
-                                    <div class="boost-card3__icon">
-                                        <img src="img/brilliant5.png" alt="">
-                                        <span class="boost-card3__shadow" style="background: #bd00ff;"></span>
-                                    </div>
-                                    <div class="boost-card3__info">
-                                        <div class="boost-card3__price">
-                                            <img src="img/coin2.svg" alt="">
-                                            <span class="text12">2,5 TON</span>
-                                        </div>
-                                        <button class="boost-card3__btn m-btn m-btn-red">
-                                            <span>Купить</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        <button class="user-info__btn ">
+                            <img class="_view1" src="img/arrow-top2.svg" alt="">
+                            <img class="_view2" src="img/arrow-top3.svg" alt="">
+                        </button>
                     </div>
                 </div>
             </div>
+
+
+            <div class="main-slider">
+                <div class="main-slider__top">
+                    Space Stone
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="main-slider__img">
+                                <img src="img/main-img.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider__img">
+                                <img src="img/main-img2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider__img">
+                                <img src="img/main-img3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider__img">
+                                <img src="img/main-img4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider__img">
+                                <img src="img/main-img5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider__img">
+                                <img src="img/main-img6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider__img">
+                                <img src="img/main-img7.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider__img">
+                                <img src="img/main-img8.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider__img">
+                                <img src="img/main-img9.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider__img">
+                                <img src="img/main-img10.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-nav">
+                        <div class="swiper-button swiper-button-prev">
+                            <img src="img/prev.svg" alt="">
+                        </div>
+                        <div class="swiper-button swiper-button-next">
+                            <img src="img/next.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main__bottom">
+            <div class="main-action">
+                <div class="main-action__info">
+                    <div class="main-action__title">Баланс:</div>
+                    <div class="main-action__num">10,100 RS</div>
+                    <div class="main-action__num2">120.003 RS / ч</div>
+                </div>
+                <div class="main-action__buttons">
+                    <button class="main-action__boost main-action__btn m-btn">
+                        <span>Boost</span>
+                        <img src="img/rocket.svg" alt="">
+                    </button>
+                    <button class="main-action__play main-action__btn m-btn">
+                        <span>Play</span>
+                    </button>
+                </div>
+            </div>
+
+            <button class="main-btn m-btn m-btn-white">
+                <span>Начать добывать RS</span>
+            </button>
         </div>
     </div>
 
@@ -271,7 +185,7 @@
     </div>
 
 
-    <script src="js/libs.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
 
 </body>
